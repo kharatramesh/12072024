@@ -37,7 +37,7 @@ terraform {
 provider "aws" {
   access_key = var.akey
   secret_key = var.skey
-  region     = var.location
+  region     = "ap-south-1"
 }
 
 resource "aws_s3_bucket" "wipro-bucket1" {

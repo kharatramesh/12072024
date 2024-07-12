@@ -28,7 +28,7 @@ terraform {
     organization = "wipro33"
     hostname     = "app.terraform.io"
     workspaces {
-      name = "12072024"
+      tags = ["12072024"]
     }
   }
 }

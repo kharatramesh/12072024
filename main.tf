@@ -19,7 +19,7 @@ variable "skey" {
 }
 variable "location" {
   type      = string
-  sensitive = true
+#  sensitive = true
   default = "ap-south-1"
 
 }

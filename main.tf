@@ -46,7 +46,12 @@ resource "aws_s3_bucket" "wipro-bucket1" {
     "purposer" = "tolearn-terraform-cloud"
   }
 }
-
+resource "aws_s3_bucket" "wipro-bucket2" {
+  bucket = "wipro-bucket2-trainer2-1207-03"
+  tags = {
+    "purposer" = "tolearn-terraform-cloud"
+  }
+}
 resource "aws_instance" "vm1" {
     ami = "ami-0ec0e125bb6c6e8ec"
     instance_type ="t2.nano"

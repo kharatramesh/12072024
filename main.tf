@@ -58,5 +58,10 @@ resource "aws_instance" "vm1" {
     tags = {
       "Name" = "LearningCloud"
     }
-  
+resource "aws_instance" "vm2" {
+    ami = "ami-0ec0e125bb6c6e8ec"
+    instance_type ="t2.nano"
+    tags = {
+      "Name" = "LearningCloud1"
+    }
 }
